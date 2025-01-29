@@ -1,2 +1,19 @@
 # get_next_line
-A function that reads a single line from a file descriptor, handling sequential file reading efficiently. Introduces file I/O, static variables, and memory management in C.
+
+## 📝 Overview  
+get_next_line is a function that retrieves a single line from a specified file descriptor, allowing sequential reading of file contents until EOF. This project is part of 42’s Common Core and focuses on low-level file manipulation in C.
+
+## 🔧 Key Concepts Learned  
+- **File Descriptors**: Reading from files, standard input, and other sources  
+- **Static Variables**: Maintaining state across function calls  
+- **I/O Operations**: Efficiently handling `read()` and managing buffers  
+- **Memory Management**: Avoiding leaks while dynamically allocating memory using `malloc()` and `free()`
+- **Custom Buffer Size**: Flexible compilation with different buffer sizes  
+
+## 📌 How It Works  
+1. Uses `read()` to fetch data from the file descriptor.  
+2. Stores and manages data using a **static variable** to handle partial reads.  
+3. Extracts a full line and returns it, keeping track of the remaining content.  
+4. Repeats until EOF is reached, ensuring efficient memory usage.  
+
+This project deepened my understanding of **file handling**, **dynamic memory allocation**, and how to build **robust, reusable functions** in C.
